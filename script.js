@@ -2,7 +2,6 @@ import { Grid } from './grid.js';
 import { Tile } from './tile.js';
 
 const gameBoard = document.getElementById('game-board');
-const gameOver = document.querySelector('.gameover');
 
 let pageXStart;
 let pageYStart;
@@ -34,8 +33,10 @@ function setTouchEnd(event) {
   if (
     Math.abs(pageXEnd - pageXStart) < 50 &&
     Math.abs(pageYEnd - pageYStart) < 50
-  )
+  ) {
+    setupInputOnce();
     return;
+  }
   if (pageXEnd - pageXStart > 50) direction = 'right';
   if (pageXEnd - pageXStart < -50) direction = 'left';
   if (pageYEnd - pageYStart > 50) direction = 'down';
