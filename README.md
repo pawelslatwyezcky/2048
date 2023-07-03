@@ -7,7 +7,7 @@ This is a JavaScript project that aims to recreate the popular 2048 game. The ob
 
 ## Getting Started
 
-1. Clone the repository to your local machine using git clone https://github.com/your-username/2048-clone.git.
+1. Clone the repository to your local machine using git clone [https://github.com/your-username/2048-clone.git](https://github.com/pawelslatwyezcky/2048).
 2. Open the project in your preferred code editor.
 3. Start a live server to make module js script type enabled.
 
